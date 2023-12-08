@@ -67,9 +67,9 @@ const MainTestimoni = () => {
                 <p className="mb-4">{testimonial.content}</p>
                 <div className="absolute bottom-4 left-4 flex">
                   <Image
-                    src="/profil.jpeg"
+                    src="/profil.webp"
                     alt="profil"
-                    className="rounded-full mr-2"
+                    className="h-auto w-auto rounded-full mr-2"
                     width={40}
                     height={40}
                   />
