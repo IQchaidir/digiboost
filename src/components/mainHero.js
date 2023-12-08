@@ -30,7 +30,7 @@ const MainHero = () => {
         </div>
         <div>
           <Image
-            src="/heroimg.png"
+            src="/heroimg.webp"
             alt="Hero Image"
             width={665}
             height={665}
