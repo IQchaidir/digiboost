@@ -7,43 +7,39 @@ const Teams = () => {
   const [leadershipTeam, setLeadershipTeam] = useState([]);
   const [otherTeamMembers, setOtherTeamMembers] = useState([]);
 
-  const CACHE_KEY = "teamMembersCache";
-  const CACHE_EXPIRATION = 3 * 24 * 60 * 60 * 1000; // 3 hari dalam milidetik
-
   useEffect(() => {
     const fetchTeamMembers = async () => {
       try {
-        // Cek apakah data ada di local storage dan masih valid
-        const cachedData = localStorage.getItem(CACHE_KEY);
-        const cachedTimestamp = localStorage.getItem(`${CACHE_KEY}_timestamp`);
-
-        if (cachedData && cachedTimestamp) {
-          const currentTime = new Date().getTime();
-          if (currentTime - parseInt(cachedTimestamp, 10) < CACHE_EXPIRATION) {
-            // Gunakan data dari cache jika masih valid
-            const cachedTeamMembers = JSON.parse(cachedData);
-            setLeadershipTeam(cachedTeamMembers.leadership);
-            setOtherTeamMembers(cachedTeamMembers.otherMembers);
-            return;
-          }
-        }
-
-        // Fetch data jika tidak ada data di cache atau sudah kadaluarsa
         const response = await fetch("https://randomuser.me/api/?results=12");
         const data = await response.json();
 
-        // ... (kode lainnya sama seperti sebelumnya)
+        // Manually adding professions to team members
+        const professions = [
+          "CEO",
+          "COO",
+          "CFO",
+          "CTO",
+          "Designer",
+          "Developer",
+          "Marketing Specialist",
+          "Content Writer",
+          "Project Manager",
+          "Sales Representative",
+          "Customer Support",
+          "Graphic Designer",
+        ];
 
-        // Cache data di local storage
-        const cachedDataToStore = {
-          leadership,
-          otherMembers,
-        };
-        localStorage.setItem(CACHE_KEY, JSON.stringify(cachedDataToStore));
-        localStorage.setItem(
-          `${CACHE_KEY}_timestamp`,
-          new Date().getTime().toString()
-        );
+        const updatedTeamMembers = data.results.map((member, index) => ({
+          ...member,
+          profession: professions[index % professions.length],
+        }));
+
+        // Separate leadership team and other team members
+        const leadership = updatedTeamMembers.slice(0, 3);
+        const otherMembers = updatedTeamMembers.slice(3);
+
+        setLeadershipTeam(leadership);
+        setOtherTeamMembers(otherMembers);
       } catch (error) {
         console.error("Error fetching team members:", error);
       }
