@@ -76,7 +76,7 @@ export default function Navbar() {
               About Us
             </button>
           </Link>
-          <Link href="/Services">
+          <Link href="/ServicesPage">
             <button
               className={`hover:bg-black hover:text-white rounded-md transition-all duration-500 ${
                 scrolled ? "w-24 h-8" : "w-28 h-10"
