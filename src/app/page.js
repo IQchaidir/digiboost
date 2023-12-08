@@ -1,9 +1,9 @@
-import Image from "next/image";
+import MainHero from "@/components/mainHero";
 
 export default function Home() {
   return (
     <div>
-      <h1 className="text-xl">hello world</h1>
+      <MainHero></MainHero>
     </div>
   );
 }
