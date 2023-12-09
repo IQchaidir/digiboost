@@ -58,7 +58,7 @@ const MainTeam = () => {
           Benefit from our expertise in designing and managing
           conversion-centered
         </p>
-        <div className="grid grid-cols-2 px-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8">
+        <div className="grid grid-cols-2 px-3 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
           {teamMembers.map((member) => (
             <div
               key={member.id}

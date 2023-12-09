@@ -37,8 +37,8 @@ const Navbar = () => {
       <div
         className={`flex justify-between transition-all duration-500 shadow-2xl bg-white ${
           scrolled
-            ? "bg-opacity-95 py-6 px-4 sm:px-40 drop-shadow-xl"
-            : "py-5 px-4 sm:px-7 mx-4 sm:mx-40 drop-shadow-xl rounded-xl mt-4"
+            ? "bg-opacity-95 py-6 px-4 md:px-40 drop-shadow-xl"
+            : "py-5 px-4 md:px-7 mx-4 md:mx-40 drop-shadow-xl rounded-xl mt-4"
         }`}
       >
         <div className="flex transition-all duration-500">
@@ -57,11 +57,11 @@ const Navbar = () => {
             Learn
           </h1>
         </div>
-        <div className={`hidden sm:flex lg:flex gap-9`}>
+        <div className={`hidden sm:hidden md:hidden lg:flex gap-9`}>
           <Link href="/">
             <button
               className={`hover:bg-black hover:text-white rounded-md transition-all duration-500 ${
-                scrolled ? "w-full h-8 sm:w-16" : "w-full h-10 sm:w-20"
+                scrolled ? "w-full h-8 md:w-16" : "w-full h-10 md:w-20"
               }`}
             >
               Home
@@ -70,7 +70,7 @@ const Navbar = () => {
           <Link href="/about">
             <button
               className={`hover:bg-black hover:text-white rounded-md transition-all duration-500 ${
-                scrolled ? "w-full h-8 sm:w-24" : "w-full h-10 sm:w-28"
+                scrolled ? "w-full h-8 md:w-24" : "w-full h-10 md:w-28"
               }`}
             >
               About Us
@@ -79,7 +79,7 @@ const Navbar = () => {
           <Link href="/services">
             <button
               className={`hover:bg-black hover:text-white rounded-md transition-all duration-500 ${
-                scrolled ? "w-full h-8 sm:w-24" : "w-full h-10 sm:w-28"
+                scrolled ? "w-full h-8 md:w-24" : "w-full h-10 md:w-28"
               }`}
             >
               Services
@@ -87,27 +87,27 @@ const Navbar = () => {
           </Link>
           <button
             className={`hover:bg-black hover:text-white rounded-md transition-all duration-500 ${
-              scrolled ? "w-full h-8 sm:w-16" : "w-full h-10 sm:w-20"
+              scrolled ? "w-full h-8 md:w-16" : "w-full h-10 md:w-20"
             }`}
           >
             Teams
           </button>
         </div>
-        {/* Button untuk toggle menu di smartphone */}
-        <button className="sm:hidden text-2xl" onClick={toggleMenu}>
+        {/* Button untuk toggle menu di mdartphone */}
+        <button className="lg:hidden md:flex text-2xl" onClick={toggleMenu}>
           ☰
         </button>
       </div>
       {/* Container baru untuk tombol-tombol menu */}
       <div
-        className={`lg:hidden sm:flex-row gap-5   
-        ${menuOpen ? "sm:flex bg-white shadow-2xl " : "hidden"}
+        className={`lg:hidden md:flex-row gap-5   
+        ${menuOpen ? "md:flex-row bg-white shadow-2xl " : "hidden"}
         ${scrolled ? "" : "mx-3 rounded-2xl"}`}
       >
         <Link href="/">
           <button
             className={`hover:bg-black hover:text-white rounded-md transition-all duration-500 ${
-              scrolled ? "w-full h-8 sm:w-16" : "w-full h-10 sm:w-20"
+              scrolled ? "w-full h-8 md:w-16" : "w-full h-10 md:w-20"
             }`}
           >
             Home
@@ -116,7 +116,7 @@ const Navbar = () => {
         <Link href="/about">
           <button
             className={`hover:bg-black hover:text-white rounded-md transition-all duration-500 ${
-              scrolled ? "w-full h-8 sm:w-24" : "w-full h-10 sm:w-28"
+              scrolled ? "w-full h-8 md:w-24" : "w-full h-10 md:w-28"
             }`}
           >
             About Us
@@ -125,7 +125,7 @@ const Navbar = () => {
         <Link href="/services">
           <button
             className={`hover:bg-black hover:text-white rounded-md transition-all duration-500 ${
-              scrolled ? "w-full h-8 sm:w-24" : "w-full h-10 sm:w-28"
+              scrolled ? "w-full h-8 md:w-24" : "w-full h-10 md:w-28"
             }`}
           >
             Services
@@ -133,7 +133,7 @@ const Navbar = () => {
         </Link>
         <button
           className={`hover:bg-black hover:text-white rounded-md transition-all duration-500 ${
-            scrolled ? "w-full h-8 sm:w-16" : "w-full h-10 sm:w-20"
+            scrolled ? "w-full h-8 md:w-16" : "w-full h-10 md:w-20"
           }`}
         >
           Teams
