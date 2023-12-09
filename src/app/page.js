@@ -8,6 +8,7 @@ import MainTestimoni from "@/components/mainTestimoni";
 export default function Home() {
   return (
     <div>
+      <MainHero></MainHero>
       <MainAbout></MainAbout>
       <MainTeam></MainTeam>
       <MainTagline></MainTagline>
