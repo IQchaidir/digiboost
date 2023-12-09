@@ -9,7 +9,7 @@ const MainHero = () => {
   return (
     <>
       {/* Tampilan Desktop */}
-      <div className="hidden sm:flex pt-40 justify-center h-auto px-40">
+      <div className="hidden sm:flex pt-40 justify-center h-auto px-40 w-auto">
         <div className="text-black text-left w-1/2 pt-7">
           <div className="bg-black p-2 inline-block">
             <h2 className="text-4xl font-extrabold text-white">BOOST...!</h2>
