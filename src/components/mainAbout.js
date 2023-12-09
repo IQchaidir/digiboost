@@ -29,7 +29,7 @@ const MainAbout = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center bg-black pt-24">
+        <div className="flex flex-col justify-center items-center bg-black pt-24 px-3">
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             <div className="flex flex-col justify-center items-center bg-red-400 text-white p-8 sm:p-14 h-auto w-auto">
               <p className="text-base">Clients</p>
