@@ -50,7 +50,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex flex-col">
-              <div className="mt-4 md:mt-0 md:ml-4">
+              <div className="mt-4 md:mt-0 ">
                 <h2 className="text-xl font-bold pb-2">Stay Connected</h2>
                 <form
                   onSubmit={handleSubscribe}
