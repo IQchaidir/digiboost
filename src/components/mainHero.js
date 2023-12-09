@@ -39,7 +39,7 @@ const MainHero = () => {
           />
         </div>
       </div>
-      <div className="hidden sm:flex lg:flex justify-center mt-[-40px] ml-96">
+      <div className="hidden sm:flex lg:flex justify-center mt-[-40px] ml-96 pl-28">
         <div className=" flex justify-between items-center bg-black w-auto gap-9 h-auto rounded-xl px-12 py-6">
           <div className="flex flex-col justify-center items-center text-white">
             <div className="w-auto h-auto bg-white rounded-full flex items-center justify-center p-2">
@@ -100,9 +100,9 @@ const MainHero = () => {
       </div>
 
       {/* Tampilan Smartphone - Icon Services */}
-      <div className="flex flex-col items-center sm:hidden">
+      <div className="flex flex-col items-center mx-2 sm:hidden">
         <div className="bg-black w-full rounded-xl px-4 py-2 ">
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex text-center justify-center gap-4">
             <div className="flex flex-col items-center text-white">
               <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center p-2">
                 <CiClock1 className="w-6 h-6 text-black" />
