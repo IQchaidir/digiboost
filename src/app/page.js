@@ -12,6 +12,7 @@ export default function Home() {
       <MainAbout></MainAbout>
       <MainTeam></MainTeam>
       <MainTagline></MainTagline>
+      <MainTestimoni></MainTestimoni>
     </div>
   );
 }
