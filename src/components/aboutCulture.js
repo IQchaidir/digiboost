@@ -13,7 +13,7 @@ const AboutCulture = () => {
         </h1>
         <div className="pt-4 sm:pt-6 md:pt-8">
           <Image
-            src="/aboutmain.webp"
+            src="/teamlandscape.webp"
             alt="cultureimg"
             width={500}
             height={500}

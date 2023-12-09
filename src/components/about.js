@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="pt-10 md:pt-16 lg:pt-24 px-4 md:px-8 lg:px-36">
+    <div className="pt-10 md:pt-16 lg:pt-32 px-4 md:px-8 lg:px-36">
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-between space-y-8 md:space-y-0">
         <div className="md:w-1/2 md:mr-8">
           <Image
@@ -15,7 +15,6 @@ export default function About() {
           />
         </div>
         <div className="lg:w-1/2 mx-auto md:mx-0">
-          {" "}
           {/* Add mx-auto class here */}
           <p className="text-base md:text-lg text-red-400">ABOUT US</p>
           <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold pt-4">
@@ -29,11 +28,11 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-center md:justify-between space-y-8 md:space-y-0 mt-8">
+      <div className="flex flex-col md:flex-row  justify-center md:justify-between space-y-8 md:space-y-0 mt-20">
         <div className="lg:w-1/2 mx-auto md:mx-0">
           {" "}
           {/* Add mx-auto class here */}
-          <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold pt-5">
+          <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold">
             Where It All Started
           </h1>
           <p className="text-base md:text-lg lg:text-2xl pt-4">
@@ -45,7 +44,7 @@ export default function About() {
         </div>
         <div className="md:w-1/2 mt-4 md:mt-0">
           <Image
-            src="/aboutmain.webp"
+            src="/teamlandscape.webp"
             alt="about img"
             width={500}
             height={500}
