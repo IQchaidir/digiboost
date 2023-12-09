@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { FaArrowDown } from "react-icons/fa";
 import {
   FcSearch,
   FcAdvertising,
@@ -12,56 +13,65 @@ import ContentPaid from "./contentPaid";
 import ContentAnalytic from "./contentAnalytic";
 
 const MainService = () => {
-  const [clickedIndex, setClickedIndex] = useState(0);
+  const [clickedIndex, setClickedIndex] = useState(null);
 
   const handleClick = (index) => {
-    setClickedIndex(index);
+    setClickedIndex((prevIndex) => (prevIndex === index ? null : index));
   };
-  const data = [
-    { text: "SEO Optimization", icon: FcSearch },
-    { text: "Content Production", icon: FcMultipleDevices },
-    { text: "Paid Advertising", icon: FcAdvertising },
-    { text: "Performance Analysis", icon: FcStatistics },
-  ];
 
-  const contentMap = [
-    <ContentSeo key="seo" />,
-    <ContentSocial key="socialmedia" />,
-    <ContentPaid key="paidad" />,
-    <ContentAnalytic key="report" />,
+  const data = [
+    { text: "SEO Optimization", icon: FcSearch, content: <ContentSeo /> },
+    {
+      text: "Content Production",
+      icon: FcMultipleDevices,
+      content: <ContentSocial />,
+    },
+    { text: "Paid Advertising", icon: FcAdvertising, content: <ContentPaid /> },
+    {
+      text: "Performance Analysis",
+      icon: FcStatistics,
+      content: <ContentAnalytic />,
+    },
   ];
 
   return (
-    <div className=" text-center bg-white pt-28">
-      <p className="text-lg lg:text-2xl inline-block  border-b-4 border-red-400 ">
+    <div className="text-center bg-white pt-20">
+      <p className="text-2xl inline-block border-b-4 border-red-400">
         OUR SERVICES
       </p>
-      <h1 className="text-4xl lg:text-5xl font-bold pt-5">
-        What Our Agency Provides
-      </h1>
-      <div className=" justify-center space-x-7 flex pt-10">
+      <h1 className="text-4xl font-bold pt-5">What Our Agency Provides</h1>
+      <div className="block pt-10 justify-center">
         {data.map((item, index) => (
-          <button
-            key={index}
-            onClick={() => handleClick(index)}
-            className={` flex flex-col items-center text-center px-5 py-5${
-              clickedIndex === index
-                ? "bg-gray-200 rounded-xl shadow-2xl transition duration-300"
-                : ""
-            }`}
-          >
-            <div className=" w-24 h-24">
-              <item.icon className="w-24 h-24" />
-            </div>
-            <p className="font-semibold text-2xl">{item.text}</p>
-          </button>
+          <div key={index} className="flex flex-col px-10 mx-44 pt-7 ">
+            <button
+              onClick={() => handleClick(index)}
+              className={` flex justify-between items-center w-full px-10 text-left py-5 bg-gray-200 rounded-xl shadow-2xl transition duration-300 ${
+                clickedIndex === index ? "transform scale-105" : ""
+              }`}
+            >
+              <div className="flex ">
+                <item.icon className="w-24 h-24" />
+                <p className="font-semibold text-2xl">{item.text}</p>
+              </div>
+              <FaArrowDown className="w-5 h-5" />
+            </button>
+            {clickedIndex === index && (
+              <div className=" flex mt-3">
+                <div className="flex bg-white w-full py-2 px-5 rounded-3xl shadow-2xl">
+                  {item.content}
+                </div>
+              </div>
+            )}
+          </div>
         ))}
       </div>
-      <div className="py-5 flex justify-center ">
-        <div className="flex bg-white  w-3/4  py-2 px-5 rounded-3xl shadow-2xl ">
-          {contentMap[clickedIndex]}
+      {clickedIndex !== null && (
+        <div className="py-5 justify-center">
+          <div className="flex bg-white w-3/4 py-2 px-5 rounded-3xl shadow-2xl">
+            {data[clickedIndex].content}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
