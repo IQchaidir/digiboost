@@ -56,27 +56,26 @@ const Footer = () => {
                   onSubmit={handleSubscribe}
                   className="border p-1 rounded-md"
                 >
-                  <div className="flex items-center">
-                    <input
-                      type="email"
-                      placeholder="Your email"
-                      className={`border-transparent p-1 flex-grow rounded-l-md ${
-                        emailError ? "border-red-500" : ""
-                      }`}
-                      value={email}
-                      onChange={(e) => {
-                        setEmail(e.target.value);
-                        setEmailError("");
-                      }}
-                    />
-                    <button
-                      type="submit"
-                      className="bg-red-400 text-white p-1 rounded-r-md"
-                      disabled={!!emailError}
-                    >
-                      Subscribe
-                    </button>
-                  </div>
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    className={`border-transparent p-1 flex-grow rounded-l-md ${
+                      emailError ? "border-red-400" : ""
+                    }`}
+                    value={email}
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                      setEmailError("");
+                    }}
+                  />
+                  <button
+                    type="submit"
+                    className="bg-red-400 text-white p-1 rounded-r-md"
+                    disabled={!!emailError}
+                  >
+                    Subscribe
+                  </button>
+
                   {emailError && (
                     <div className=" text-red-500">{emailError}</div>
                   )}
@@ -87,7 +86,7 @@ const Footer = () => {
                   </div>
                 )}
               </div>
-              <div className="mt-4 md:mt-0 md:ml-4 flex items-center gap-1 pt-2">
+              <div className="mt-4  flex items-center gap-1 pt-2">
                 <FaLinkedin className="w-8 h-8" />
                 <FaInstagramSquare className="w-8 h-8" />
                 <FaSquareXTwitter className="w-8 h-8" />
