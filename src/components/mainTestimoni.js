@@ -28,24 +28,24 @@ const MainTestimoni = () => {
   ];
 
   return (
-    <div className="pt-10 px-6 mx-auto block  pb-9  sm:px-16 lg:px-32">
+    <div className="pt-10 px-6 mx-auto block pb-9 sm:px-8 lg:px-32">
       <section className="text-black p-6">
         <div className="flex flex-col mb-6">
-          <h2 className=" flex text-xl lg:text-3xl sm:text-xl font-bold ">
+          <h2 className="flex text-xl lg:text-3xl sm:text-xl font-bold ">
             Our Client Testimony
             <span>
               <RiThumbUpLine className="ml-2 w-7 h-7 lg:w-10 lg:h-10" />
             </span>
           </h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="border h-[330px]  rounded-sm p-4 lg:h-[200px] sm:h-[330px] relative transform hover:scale-105 transition-transform duration-200 hover:shadow-sm"
+              className="border h-auto rounded-sm p-4 lg:h-auto sm:h-auto relative transform hover:scale-105 transition-transform duration-200 hover:shadow-sm"
             >
               <p className="mb-4">{testimonial.content}</p>
-              <div className="absolute bottom-4 left-4 flex items-center">
+              <div className="flex items-center">
                 <Image
                   src="/profil.webp"
                   alt="profil"
@@ -58,7 +58,7 @@ const MainTestimoni = () => {
                   <p className="text-sm">{testimonial.profession}</p>
                 </div>
               </div>
-              <div className="flex justify-end mt-2">
+              <div className="flex text-right mt-2">
                 <FaStar className="w-5 h-5 text-yellow-400" />
                 <FaStar className="w-5 h-5 text-yellow-400" />
                 <FaStar className="w-5 h-5 text-yellow-400" />

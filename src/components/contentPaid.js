@@ -1,15 +1,17 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 
 const ContentPaid = () => {
   return (
     <>
-      <div className=" w-3/4 pr-8 text-left">
-        <p className="text-2xl font-semibold mb-3">Paid Advertising</p>
-        <p className="text-black text-xl">
-          Elevate your brand with precision! Our Paid Advertising services are
-          designed to take your business to new heights. From targeted campaigns
-          to measurable results, we ensure your message reaches the right
-          audience at the right time. Ready to boost your online presence?
+      <div className="w-full text-left sm:w-3/4 sm:pr-8">
+        <p className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-3">
+          SEO Optimization
+        </p>
+        <p className="text-black text-lg sm:text-xl md:text-2xl">
+          Enhance your online visibility! With our SEO optimization services,
+          not only will you achieve higher rankings on search engines, but
+          you'll also boost your business opportunities.
         </p>
 
         <div className="pt-4">
@@ -18,9 +20,9 @@ const ContentPaid = () => {
           </button>
         </div>
       </div>
-      <div>
+      <div className="hidden sm:block">
         <Image
-          src="/paidad.webp"
+          src="/seo.webp"
           alt="Sample Image"
           className="rounded-lg w-auto h-auto"
           height={250}

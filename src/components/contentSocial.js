@@ -4,13 +4,14 @@ import Image from "next/image";
 const ContentSocial = () => {
   return (
     <>
-      <div className=" w-3/4 pr-8 text-left">
-        <p className="text-2xl font-semibold mb-3">Content Production</p>
-        <p className="text-black text-xl">
-          Unleash creativity meets strategic content! Explore the full potential
-          of our innovative Content Production services. From idea development
-          to implementation, we deliver captivating content to elevate
-          visibility and capture your audience's hearts.
+      <div className="w-full text-left sm:w-3/4 sm:pr-8">
+        <p className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-3">
+          SEO Optimization
+        </p>
+        <p className="text-black text-lg sm:text-xl md:text-2xl">
+          Enhance your online visibility! With our SEO optimization services,
+          not only will you achieve higher rankings on search engines, but
+          you'll also boost your business opportunities.
         </p>
 
         <div className="pt-4">
@@ -19,9 +20,9 @@ const ContentSocial = () => {
           </button>
         </div>
       </div>
-      <div>
+      <div className="hidden sm:block">
         <Image
-          src="/media.webp"
+          src="/seo.webp"
           alt="Sample Image"
           className="rounded-lg w-auto h-auto"
           height={250}

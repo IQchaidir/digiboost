@@ -45,11 +45,11 @@ const events = [
 
 const AboutTimeline = () => {
   return (
-    <div className="px-36 pt-20 flex flex-col justify-center text-center">
-      <h1 className="text-3xl font-bold mt-8 mb-4">
+    <div className="px-4 md:px-8 lg:px-36 pt-10 md:pt-20 flex flex-col justify-center text-center">
+      <h1 className="text-xl md:text-3xl lg:text-4xl font-bold mt-8 mb-4">
         Timeline Sejarah [Nama Perusahaan]
       </h1>
-      <div className="flex flex-col items-center justify-center mt-10 space-y-8 relative">
+      <div className="flex flex-col items-center justify-center mt-6 md:mt-10 space-y-6 md:space-y-8 relative">
         {events.map((event, index) => (
           <div
             key={index}
@@ -58,15 +58,17 @@ const AboutTimeline = () => {
             }`}
           >
             <div className="md:w-3/5 relative z-10">
-              <div className="p-6 bg-white rounded-md shadow-md text-left">
-                <span className="text-lg font-semibold text-red-400">
+              <div className="p-4 md:p-6 bg-white rounded-md shadow-md text-left">
+                <span className="text-base md:text-lg font-semibold text-red-400">
                   {event.year}
                 </span>
-                <p className="text-black">{event.description}</p>
+                <p className="text-black text-sm md:text-base">
+                  {event.description}
+                </p>
               </div>
             </div>
             <div className="md:w-2/5">
-              <div className="hidden md:block h-full w-1 bg-red-400 absolute top-0 left-1/2 "></div>
+              <div className="hidden md:block h-full w-1 bg-red-400 absolute top-0 left-1/2 transform -translate-x-1/2"></div>
             </div>
           </div>
         ))}

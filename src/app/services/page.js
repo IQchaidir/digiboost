@@ -7,9 +7,9 @@ export default function ServicesPage() {
   return (
     <>
       <Services></Services>
-      <ServicesPlus></ServicesPlus>
-      <ServicesPrice></ServicesPrice>
-      <MainTestimoni></MainTestimoni>
+      {/* <ServicesPlus></ServicesPlus> */}
+      {/* <ServicesPrice></ServicesPrice> */}
+      {/* <MainTestimoni></MainTestimoni> */}
     </>
   );
 }

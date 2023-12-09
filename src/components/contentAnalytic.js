@@ -1,28 +1,30 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 
 const ContentAnalytic = () => {
   return (
     <>
-      <div className=" w-3/4 pr-8 text-left">
-        <p className="text-2xl font-semibold mb-3">Performance Analysis</p>
-        <p className="text-black text-xl">
-          Enhance your digital strategy! With our Performance Analysis services,
-          we unlock the unlimited potential of your Paid Advertising, SEO, and
-          Content Production campaigns. Through in-depth data, we provide
-          critical insights to improve and maximize every aspect of your digital
-          marketing.
+      <div className="w-full text-left sm:w-3/4 sm:pr-8">
+        <p className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-3">
+          SEO Optimization
         </p>
+        <p className="text-black text-lg sm:text-xl md:text-2xl">
+          Enhance your online visibility! With our SEO optimization services,
+          not only will you achieve higher rankings on search engines, but
+          you'll also boost your business opportunities.
+        </p>
+
         <div className="pt-4">
           <button className="bg-red-400 h-auto w-auto p-1 rounded-md text-white">
             Learn More
           </button>
         </div>
       </div>
-      <div>
+      <div className="hidden sm:block">
         <Image
-          src="/report.webp"
+          src="/seo.webp"
           alt="Sample Image"
-          className="rounded-lg h-auto w-auto"
+          className="rounded-lg w-auto h-auto"
           height={250}
           width={250}
         />
