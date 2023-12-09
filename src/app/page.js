@@ -10,6 +10,8 @@ export default function Home() {
     <div>
       <MainHero></MainHero>
       <MainAbout></MainAbout>
+      <MainTeam></MainTeam>
+      <MainTagline></MainTagline>
     </div>
   );
 }
