@@ -31,10 +31,10 @@ const MainTestimoni = () => {
     <div className="pt-10 px-6 mx-auto block  pb-9  sm:px-16 lg:px-32">
       <section className="text-black p-6">
         <div className="flex flex-col mb-6">
-          <h2 className=" flex text-3xl font-bold ">
-            Our Client Testimony{" "}
+          <h2 className=" flex text-xl lg:text-3xl sm:text-xl font-bold ">
+            Our Client Testimony
             <span>
-              <RiThumbUpLine className="ml-2 w-10 h-10 " />
+              <RiThumbUpLine className="ml-2 w-7 h-7 lg:w-10 lg:h-10" />
             </span>
           </h2>
         </div>
