@@ -28,7 +28,7 @@ const MainTestimoni = () => {
   ];
 
   return (
-    <div className="pt-10 px-6 mx-auto block  pb-9 sm:px-10 md:px-16 lg:px-32">
+    <div className="pt-10 px-6 mx-auto block  pb-9  sm:px-16 lg:px-32">
       <section className="text-black p-6">
         <div className="flex flex-col mb-6">
           <h2 className=" flex text-3xl font-bold ">
@@ -38,11 +38,11 @@ const MainTestimoni = () => {
             </span>
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="border rounded-md p-4 min-h-[250px] relative transform hover:scale-105 transition-transform duration-200 hover:shadow-md"
+              className="border h-[330px]  rounded-sm p-4 lg:h-[200px] sm:h-[330px] relative transform hover:scale-105 transition-transform duration-200 hover:shadow-sm"
             >
               <p className="mb-4">{testimonial.content}</p>
               <div className="absolute bottom-4 left-4 flex items-center">
