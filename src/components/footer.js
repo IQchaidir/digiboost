@@ -32,23 +32,16 @@ const Footer = () => {
     <>
       <div className="pt-10">
         <footer className="text-black p-6 bg-gray-100">
-          <div className="mx-28 flex justify-between items-center">
-            <div className="flex">
-              <Image
-                src="/vercel.svg"
-                alt="logo"
-                height={100}
-                width={100}
-                className="w-auto h-wuto"
-              />
-              <div>
+          <div className="mx-2 md:mx-28 flex flex-col md:flex-row justify-between">
+            <div className="flex flex-col md:flex-row">
+              <div className="mt-4 md:mt-0 md:ml-4">
                 <p className="text-xl font-semibold">Company Name</p>
                 <p>123 Main Street, City</p>
                 <p>Email: info@company.com</p>
                 <p>Phone: (123) 456-7890</p>
               </div>
-              <div className="pl-40">
-                <h2 className="text-xl font-bold">Company</h2>
+              <div className="ml-0 md:ml-28 mt-4 md:mt-0">
+                <h2 className="text-xl font-bold pb-2">Company</h2>
                 <ul>
                   <li>Team</li>
                   <li>About Us</li>
@@ -56,8 +49,8 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="block">
-              <div className="md:mt-0 md:ml-4">
+            <div className="flex flex-col">
+              <div className="mt-4 md:mt-0 md:ml-4">
                 <h2 className="text-xl font-bold pb-2">Stay Connected</h2>
                 <form
                   onSubmit={handleSubscribe}
@@ -89,13 +82,15 @@ const Footer = () => {
                   )}
                 </form>
                 {showNotification && (
-                  <div className=" text-green-600">Thanks for subscribing!</div>
+                  <div className=" text-green-600 mt-2">
+                    Thanks for subscribing!
+                  </div>
                 )}
               </div>
               <div className="mt-4 md:mt-0 md:ml-4 flex items-center gap-1 pt-2">
-                <FaLinkedin className=" w-8 h-8" />
-                <FaInstagramSquare className=" w-8 h-8" />
-                <FaSquareXTwitter className=" w-8 h-8" />
+                <FaLinkedin className="w-8 h-8" />
+                <FaInstagramSquare className="w-8 h-8" />
+                <FaSquareXTwitter className="w-8 h-8" />
               </div>
             </div>
           </div>

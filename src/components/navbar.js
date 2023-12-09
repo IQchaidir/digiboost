@@ -47,7 +47,7 @@ const Navbar = () => {
             alt="logo"
             width={scrolled ? 40 : 50}
             height={scrolled ? 80 : 100}
-            className={`transition-all duration-500 `}
+            className={`transition-all duration-500 w-auto h-auto `}
           />
           <h1
             className={`text-${
