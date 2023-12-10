@@ -70,7 +70,7 @@ const Footer = () => {
                   />
                   <button
                     type="submit"
-                    className="bg-red-400 text-white p-1 rounded-r-md"
+                    className="bg-black text-white p-1 rounded-r-md"
                     disabled={!!emailError}
                   >
                     Subscribe
