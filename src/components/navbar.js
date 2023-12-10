@@ -44,11 +44,11 @@ const Navbar = () => {
       >
         <Link href="/">
           <Image
-            src="/logo-01.png"
+            src="/logo.png"
             alt="logo"
-            width={scrolled ? 130 : 130}
-            height={scrolled ? 130 : 130}
-            className={`transition-all duration-500 w-auto h-auto `}
+            width={scrolled ? 100 : 100}
+            height={scrolled ? 100 : 100}
+            className={`transition-all duration-500 w-20 h-11 lg:w-auto lg:h-auto `}
           />
         </Link>
         <div className={`hidden lg:flex md:flex xl:flex gap-6 items-center`}>
