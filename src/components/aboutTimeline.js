@@ -59,7 +59,7 @@ const AboutTimeline = () => {
           >
             <div className="md:w-3/5 relative z-10">
               <div className="p-4 md:p-6 bg-white rounded-md shadow-md text-left">
-                <span className="text-base md:text-lg font-semibold text-red-400">
+                <span className="text-base md:text-lg font-semibold text-black">
                   {event.year}
                 </span>
                 <p className="text-black text-sm md:text-base">
@@ -68,7 +68,7 @@ const AboutTimeline = () => {
               </div>
             </div>
             <div className="md:w-2/5">
-              <div className="hidden md:block h-full w-1 bg-red-400 absolute top-0 left-1/2 transform -translate-x-1/2"></div>
+              <div className=" md:block h-full w-1 bg-red-400 absolute top-0 left-1/2 transform -translate-x-1/2"></div>
             </div>
           </div>
         ))}

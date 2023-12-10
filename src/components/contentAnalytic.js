@@ -1,36 +1,27 @@
 /* eslint-disable react/no-unescaped-entities */
-import Image from "next/image";
+import Link from "next/link";
 
-const ContentAnalytic = () => {
+const ContentSeo = () => {
   return (
     <>
-      <div className="w-full text-left sm:w-3/4 sm:pr-8">
-        <p className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-3">
-          SEO Optimization
-        </p>
-        <p className="text-black text-lg sm:text-xl md:text-2xl">
-          Enhance your online visibility! With our SEO optimization services,
-          not only will you achieve higher rankings on search engines, but
-          you'll also boost your business opportunities.
+      <div className="w-full text-left sm:w-3/4">
+        <p className="text-black text-base sm:text-base md:text-xl lg:text-2xl">
+          Track and optimize your success with our Performance Analytics
+          services! Unlock valuable insights into your digital strategy,
+          understand audience behavior, and fine-tune your campaigns for maximum
+          impact.
         </p>
 
         <div className="pt-4">
-          <button className="bg-red-400 h-auto w-auto p-1 rounded-md text-white">
-            Learn More
-          </button>
+          <Link href="/services">
+            <button className="bg-red-400 h-auto w-auto p-1 rounded-md text-white text-base sm:text-base md:text-xl lg:text-2xl">
+              Learn More
+            </button>
+          </Link>
         </div>
-      </div>
-      <div className="hidden sm:block">
-        <Image
-          src="/seo.webp"
-          alt="Sample Image"
-          className="rounded-lg w-auto h-auto"
-          height={250}
-          width={250}
-        />
       </div>
     </>
   );
 };
 
-export default ContentAnalytic;
+export default ContentSeo;

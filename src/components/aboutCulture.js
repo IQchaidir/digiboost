@@ -43,7 +43,6 @@ const AboutCulture = () => {
 
         {/* Vision */}
         <div className="flex flex-col sm:flex-row items-center gap-2 pt-4 sm:pt-5">
-          <FaCheckCircle className="h-12 w-12 sm:h-20 sm:w-20" />
           <div>
             <p className="text-lg font-semibold pt-1 sm:pt-2">Our Vision</p>
             <p className="text-sm pt-2 sm:pt-2">
@@ -57,7 +56,6 @@ const AboutCulture = () => {
 
         {/* Solution */}
         <div className="flex flex-col sm:flex-row items-center gap-2 pt-4 sm:pt-5">
-          <FaCheckCircle className="h-12 w-12 sm:h-20 sm:w-20" />
           <div>
             <p className="text-lg font-semibold pt-1 sm:pt-2">Our Solution</p>
             <p className="text-sm pt-2 sm:pt-2">

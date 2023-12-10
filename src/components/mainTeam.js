@@ -6,7 +6,7 @@ const MainTeam = () => {
       id: 1,
       name: "John Doe",
       position: "CEO",
-      image: "/profil.webp",
+      image: "/profil1.jpg",
       socialMedia: {
         linkedin: "/linkedin.png",
         twitter: "/twitter.png",
@@ -15,9 +15,9 @@ const MainTeam = () => {
     },
     {
       id: 2,
-      name: "Jane Doe",
+      name: "Jhon Dix",
       position: "CTO",
-      image: "/profil.webp",
+      image: "/profil2.jpg",
       socialMedia: {
         linkedin: "/linkedin.png",
         twitter: "/twitter.png",
@@ -26,9 +26,9 @@ const MainTeam = () => {
     },
     {
       id: 3,
-      name: "Jane Doe",
+      name: "Mark Wien",
       position: "CFO",
-      image: "/profil.webp",
+      image: "/profil3.jpg",
       socialMedia: {
         linkedin: "/linkedin.png",
         twitter: "/twitter.png",
@@ -37,9 +37,9 @@ const MainTeam = () => {
     },
     {
       id: 4,
-      name: "Jane Doe",
+      name: "Louis Sam",
       position: "COO",
-      image: "/profil.webp",
+      image: "/profil4.jpg",
       socialMedia: {
         linkedin: "/linkedin.png",
         twitter: "/twitter.png",
@@ -58,19 +58,19 @@ const MainTeam = () => {
           Benefit from our expertise in designing and managing
           conversion-centered
         </p>
-        <div className="grid grid-cols-2 px-3 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
+        <div className="grid grid-cols-2  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="relative bg-white text-black w-full sm:w-60 h-auto py-6 sm:py-10 flex flex-col items-center transition-transform hover:text-white hover:bg-red-400 hover:scale-105"
+              className=" bg-white text-black w-full sm:w-60 h-auto py-1 px-1 rounded-md  flex flex-col items-center transition-transform hover:text-white hover:bg-red-400 hover:scale-105"
             >
-              <div className="relative">
+              <div>
                 <Image
                   src={member.image}
                   alt={member.name}
-                  width={100}
-                  height={100}
-                  className="rounded-full"
+                  width={200}
+                  height={200}
+                  className=" w-auto h-auto"
                 />
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mt-2">

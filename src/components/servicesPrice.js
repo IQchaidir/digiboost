@@ -17,10 +17,10 @@ const ServicesPrice = () => {
           <h2 className="text-4xl sm:text-6xl pt-4 md:pt-7 font-bold">
             $999<span className="text-lg">/month</span>
           </h2>
-          <ul className="pt-6 md:pt-10 text-lg font-medium">
+          <ul className="pt-6 md:pt-10 text-base md:text-lg lg:text-lg sm:text-base">
             <li className="flex items-center mb-5 ">
               <span className="inline-block w-4 h-4 mr-2 bg-red-400 rounded-full" />
-              Search Engine Optimization (SEO){" "}
+              Search Engine Optimization
             </li>
             <li className="flex items-center mb-5 ">
               <span className="inline-block w-4 h-4 mr-2 bg-red-400 rounded-full" />
@@ -60,10 +60,10 @@ const ServicesPrice = () => {
           <h2 className="text-4xl sm:text-6xl pt-4 md:pt-7 font-bold">
             $1999<span className="text-lg">/month</span>
           </h2>
-          <ul className="pt-6 md:pt-10 text-lg font-medium">
+          <ul className="pt-6 md:pt-10 text-base md:text-lg lg:text-lg sm:text-base">
             <li className="flex items-center mb-5 ">
               <span className="inline-block w-4 h-4 mr-2 bg-red-400 rounded-full" />
-              Search Engine Optimization (SEO){" "}
+              Search Engine Optimization
             </li>
             <li className="flex items-center mb-5 ">
               <span className="inline-block w-4 h-4 mr-2 bg-red-400 rounded-full" />
