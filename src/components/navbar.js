@@ -46,8 +46,8 @@ const Navbar = () => {
           <Image
             src="/logo.png"
             alt="logo"
-            width={scrolled ? 100 : 100}
-            height={scrolled ? 100 : 100}
+            width={scrolled ? 80 : 80}
+            height={scrolled ? 80 : 80}
             className={`transition-all duration-500 w-20 h-11 lg:w-auto lg:h-auto `}
           />
         </Link>
