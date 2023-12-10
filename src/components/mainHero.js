@@ -24,10 +24,10 @@ const MainHero = () => {
       </div>
       <div className="flex justify-center">
         <Image
-          src="/heroimg.webp"
+          src="/hero.jpg"
           alt="Hero Image"
-          width={400}
-          height={400}
+          width={700}
+          height={700}
           className="w-auto h-auto"
           priority
         />
