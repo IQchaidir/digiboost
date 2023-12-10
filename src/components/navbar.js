@@ -39,18 +39,18 @@ const Navbar = () => {
         className={`flex justify-between transition-all duration-500 shadow-2xl bg-white ${
           scrolled
             ? "bg-opacity-95 py-3 px-5 lg:px-28 drop-shadow-xl"
-            : "py-5 px-5 lg:px-20 mx-2 xl:mx-28 lg:mx-16 md:mx-10 sm:mx-6 drop-shadow-xl rounded-xl mt-4"
+            : "py-3 px-5 lg:px-20 mx-2 xl:mx-28 lg:mx-16 md:mx-10 sm:mx-6 drop-shadow-xl rounded-xl mt-4"
         }`}
       >
-        <div className="flex transition-all duration-500 items-center">
+        <Link href="/">
           <Image
-            src="/seo.webp"
+            src="/logo-01.png"
             alt="logo"
-            width={scrolled ? 40 : 50}
-            height={scrolled ? 80 : 100}
+            width={scrolled ? 130 : 130}
+            height={scrolled ? 130 : 130}
             className={`transition-all duration-500 w-auto h-auto `}
           />
-        </div>
+        </Link>
         <div className={`hidden lg:flex md:flex xl:flex gap-6 items-center`}>
           <Link href="/">
             <button
