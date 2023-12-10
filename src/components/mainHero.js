@@ -22,16 +22,7 @@ const MainHero = () => {
           only the best results.
         </p>
       </div>
-      <div className="flex justify-center">
-        <Image
-          src="/hero.jpg"
-          alt="Hero Image"
-          width={700}
-          height={700}
-          className="w-auto h-auto"
-          priority
-        />
-      </div>
+      <div className="flex justify-center"></div>
     </div>
   );
 };
