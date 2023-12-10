@@ -6,7 +6,7 @@ const MainTeam = () => {
       id: 1,
       name: "John Doe",
       position: "CEO",
-      image: "/profil1.jpg",
+      image: "/profil1.webp",
       socialMedia: {
         linkedin: "/linkedin.png",
         twitter: "/twitter.png",
@@ -17,7 +17,7 @@ const MainTeam = () => {
       id: 2,
       name: "Jhon Dix",
       position: "CTO",
-      image: "/profil2.jpg",
+      image: "/profil2.webp",
       socialMedia: {
         linkedin: "/linkedin.png",
         twitter: "/twitter.png",
@@ -28,7 +28,7 @@ const MainTeam = () => {
       id: 3,
       name: "Mark Wien",
       position: "CFO",
-      image: "/profil3.jpg",
+      image: "/profil3.webp",
       socialMedia: {
         linkedin: "/linkedin.png",
         twitter: "/twitter.png",
@@ -39,7 +39,7 @@ const MainTeam = () => {
       id: 4,
       name: "Louis Sam",
       position: "COO",
-      image: "/profil4.jpg",
+      image: "/profil4.webp",
       socialMedia: {
         linkedin: "/linkedin.png",
         twitter: "/twitter.png",

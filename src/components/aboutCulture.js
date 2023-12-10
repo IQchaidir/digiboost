@@ -15,8 +15,8 @@ const AboutCulture = () => {
           <Image
             src="/teamlandscape.webp"
             alt="cultureimg"
-            width={500}
-            height={500}
+            width={400}
+            height={400}
             className="w-full h-auto"
           />
         </div>

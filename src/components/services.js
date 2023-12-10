@@ -37,10 +37,16 @@ const Services = () => {
     },
     {
       icon: <FcMultipleDevices className="w-12 h-12 md:w-20 md:h-20" />,
-      title: "Responsive Design",
+      title: "Quality Content",
       description:
-        "Ensure your website looks great on all devices, from desktops to smartphones.",
-      list: ["Mobile-Friendly", "Cross-Browser Compatibility", "Fluid Layout"],
+        "Craft compelling content that captivates your audience and drives meaningful engagement.",
+      list: [
+        "Strategic Impact",
+        "Captivating Creativity",
+        "SEO Excellence",
+        "Unmatched Versatility",
+        "Results that Matter",
+      ],
     },
     {
       icon: <FcAdvertising className="w-12 h-12 md:w-20 md:h-20" />,

@@ -36,8 +36,8 @@ const MainHero = () => {
           <Image
             src="/heroimg.webp"
             alt="Hero Image"
-            width={800}
-            height={800}
+            width={400}
+            height={400}
             className="w-auto h-auto"
             priority
           />
