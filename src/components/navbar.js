@@ -38,25 +38,18 @@ const Navbar = () => {
       <div
         className={`flex justify-between transition-all duration-500 shadow-2xl bg-white ${
           scrolled
-            ? "bg-opacity-95 py-3 px-10 lg:px-28 drop-shadow-xl"
-            : "py-5 px-10 lg:px-20 mx-2 xl:mx-28 lg:mx-16 md:mx-10 sm:mx-6 drop-shadow-xl rounded-xl mt-4"
+            ? "bg-opacity-95 py-3 px-5 lg:px-28 drop-shadow-xl"
+            : "py-5 px-5 lg:px-20 mx-2 xl:mx-28 lg:mx-16 md:mx-10 sm:mx-6 drop-shadow-xl rounded-xl mt-4"
         }`}
       >
         <div className="flex transition-all duration-500 items-center">
           <Image
-            src="/vercel.svg"
+            src="/seo.webp"
             alt="logo"
             width={scrolled ? 40 : 50}
             height={scrolled ? 80 : 100}
             className={`transition-all duration-500 w-auto h-auto `}
           />
-          <h1
-            className={`text-${
-              scrolled ? "2xl" : "3xl"
-            } transition-all duration-500 ml-2 md:ml-4`}
-          >
-            Learn
-          </h1>
         </div>
         <div className={`hidden lg:flex md:flex xl:flex gap-6 items-center`}>
           <Link href="/">
@@ -87,7 +80,8 @@ const Navbar = () => {
           </button>
         </div>
         {/* Button untuk toggle menu di smartphone */}
-        <button className="flex md:hidden text-2xl" onClick={toggleMenu}>
+
+        <button className="flex md:hidden text-3xl py-2" onClick={toggleMenu}>
           ☰
         </button>
       </div>
