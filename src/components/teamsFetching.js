@@ -65,7 +65,7 @@ const TeamsFetching = () => {
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="bg-white p-6 rounded-md shadow-md flex flex-col items-center transition-all duration-300 hover:bg-red-400 hover:text-white hover:scale-105"
+            className="bg-white border p-6 rounded-md shadow-md flex flex-col items-center transition-all duration-300 hover:bg-red-400 hover:text-white hover:scale-105"
           >
             <Image
               src={member.picture.large}

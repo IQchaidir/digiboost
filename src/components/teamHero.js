@@ -5,14 +5,14 @@ import Link from "next/link";
 const TeamHero = () => {
   return (
     <div className="flex flex-col pt-40 justify-center items-center text-black">
-      <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold pt-4">
+      <h1 className="text-4xl sm:text-6xl md:text-6xl font-bold pt-4">
         Meet The Team
       </h1>
-      <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold pb-5">
+      <h1 className="text-4xl sm:text-6xl md:text-6xl font-bold pb-5">
         Our Professional
       </h1>
 
-      <div className="pt-2">
+      <div className="pt-2 pb-5">
         <Image
           src="/teamhero.webp"
           alt="heroimg"
