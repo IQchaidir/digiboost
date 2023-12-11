@@ -29,6 +29,10 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <div
       className={`navbar-container fixed w-full z-50 ${
@@ -54,6 +58,7 @@ const Navbar = () => {
         <div className={`hidden lg:flex md:flex xl:flex gap-6 items-center`}>
           <Link href="/">
             <button
+              onClick={closeMenu}
               className={`nav-button hover:bg-black hover:text-white rounded-xl p-2`}
             >
               Home
@@ -61,6 +66,7 @@ const Navbar = () => {
           </Link>
           <Link href="/about">
             <button
+              onClick={closeMenu}
               className={`nav-button hover:bg-black hover:text-white rounded-xl p-2`}
             >
               About Us
@@ -68,6 +74,7 @@ const Navbar = () => {
           </Link>
           <Link href="/services">
             <button
+              onClick={closeMenu}
               className={`nav-button hover:bg-black hover:text-white rounded-xl p-2`}
             >
               Services
@@ -75,19 +82,17 @@ const Navbar = () => {
           </Link>
           <Link href="/teams">
             <button
+              onClick={closeMenu}
               className={`nav-button hover:bg-black hover:text-white rounded-xl p-2`}
             >
               Teams
             </button>
           </Link>
         </div>
-        {/* Button untuk toggle menu di smartphone */}
-
         <button className="flex md:hidden text-3xl py-2" onClick={toggleMenu}>
           ☰
         </button>
       </div>
-      {/* Container baru untuk tombol-tombol menu */}
       <div
         className={`lg:hidden  
         ${
@@ -103,6 +108,7 @@ const Navbar = () => {
       >
         <Link href="/">
           <button
+            onClick={closeMenu}
             className={`nav-button hover:bg-black hover:w-full hover:text-white rounded-xl p-2`}
           >
             Home
@@ -110,6 +116,7 @@ const Navbar = () => {
         </Link>
         <Link href="/about">
           <button
+            onClick={closeMenu}
             className={`nav-button hover:bg-black hover:w-full hover:text-white rounded-xl p-2`}
           >
             About Us
@@ -117,16 +124,20 @@ const Navbar = () => {
         </Link>
         <Link href="/services">
           <button
+            onClick={closeMenu}
             className={`nav-button hover:bg-black hover:w-full hover:text-white rounded-xl p-2`}
           >
             Services
           </button>
         </Link>
-        <button
-          className={`nav-button hover:bg-black hover:w-full hover:text-white rounded-xl p-2`}
-        >
-          Teams
-        </button>
+        <Link href="/teams">
+          <button
+            onClick={closeMenu}
+            className={`nav-button hover:bg-black hover:w-full hover:text-white rounded-xl p-2`}
+          >
+            Teams
+          </button>
+        </Link>
       </div>
     </div>
   );
