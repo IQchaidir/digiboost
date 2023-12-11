@@ -19,7 +19,7 @@ const MainHero = () => {
         <button className="bg-black text-white rounded-xl px-6 py-3 text-base font-medium ">
           Learn More
         </button>
-        <div className="pt-10">
+        <div className="pt-12">
           <Image
             src="/bghero.webp"
             alt="heroimg"
