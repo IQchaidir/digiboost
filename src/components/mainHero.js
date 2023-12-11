@@ -18,7 +18,7 @@ const MainHero = () => {
           Better Solution.
         </h1>
         <Link href="/services">
-          <button className="bg-black text-white rounded-xl px-6 py-3 text-base font-medium ">
+          <button className="bg-black text-white rounded-xl px-6 py-3 text-base font-normal ">
             Our Services
           </button>
         </Link>
