@@ -25,7 +25,7 @@ const MainHero = () => {
         </div>
         <div className="flex justify-center">
           <Image
-            src="/digital-marketing.png"
+            src="/dm.png"
             alt="Hero Image"
             width={400}
             height={400}
