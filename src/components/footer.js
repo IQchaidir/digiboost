@@ -44,13 +44,13 @@ const Footer = () => {
                 <h2 className="text-xl font-bold pb-2">Company</h2>
                 <ul>
                   <Link href="/teams">
-                    <li>Team</li>
+                    <li className="hover:scale-105">Team</li>
                   </Link>
                   <Link href="/about">
-                    <li>About Us</li>
+                    <li className="hover:scale-105">About Us</li>
                   </Link>
                   <Link href="/services">
-                    <li>Services</li>
+                    <li className="hover:scale-105">Services</li>
                   </Link>
                 </ul>
               </div>
@@ -94,13 +94,13 @@ const Footer = () => {
               </div>
               <div className="mt-4  flex items-center gap-1 pt-2">
                 <Link href="https://id.linkedin.com/">
-                  <FaLinkedin className="w-8 h-8" />
+                  <FaLinkedin className="w-8 h-8 hover:scale-105" />
                 </Link>
                 <Link href="https://www.instagram.com/">
-                  <FaInstagramSquare className="w-8 h-8" />
+                  <FaInstagramSquare className="w-8 h-8 hover:scale-105" />
                 </Link>
                 <Link href="https://twitter.com/?lang=id">
-                  <FaSquareXTwitter className="w-8 h-8" />
+                  <FaSquareXTwitter className="w-8 h-8 hover:scale-105" />
                 </Link>
               </div>
             </div>

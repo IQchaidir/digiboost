@@ -45,10 +45,12 @@ const events = [
 
 const AboutTimeline = () => {
   return (
-    <div className="px-4 md:px-8 lg:px-36 pt-24 pb-10 flex flex-col justify-center text-center">
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold  mb-4">
-        Timeline History
-      </h1>
+    <div className="px-4 md:px-8 lg:px-36 pt-32 pb-10 flex flex-col justify-center text-center">
+      <div className="mb-6">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white bg-black rounded-xl p-4 inline-block">
+          Timeline History
+        </h1>
+      </div>
       <div className="flex flex-col items-center justify-center mt-6 md:mt-10 space-y-6 md:space-y-8 relative">
         {events.map((event, index) => (
           <div

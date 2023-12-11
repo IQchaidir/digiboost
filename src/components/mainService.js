@@ -35,12 +35,12 @@ const MainService = () => {
   ];
 
   return (
-    <div className="text-center bg-white pt-20 mb-20">
+    <div className="text-center bg-white pt-10 mb-20">
       <p className="text-2xl inline-block border-b-4 border-red-400">
         OUR SERVICES
       </p>
       <h1 className="text-4xl font-bold pt-5">What Our Agency Provides</h1>
-      <div className="block pt-10 justify-center sm:mx-6 xl:mx-28 lg:mx-16 md:mx-10">
+      <div className="block pt-10 justify-center mx-4 sm:mx-24 xl:mx-56 lg:mx-44 md:mx-32">
         {data.map((item, index) => (
           <div key={index} className="flex flex-col pt-7 items-center">
             <button

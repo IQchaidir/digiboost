@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <MainHero></MainHero>
-      <MainPlus></MainPlus>
+
       <MainService></MainService>
       <MainAbout></MainAbout>
       <MainTeam></MainTeam>

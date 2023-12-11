@@ -3,35 +3,30 @@ import Image from "next/image";
 
 const MainHero = () => {
   return (
-    <div className="mx-2 sm:mx-6  md:mx-10  lg:mx-16 xl:mx-0 ">
-      <div className="flex flex-col md:flex-row pt-36 md:pt-40 justify-center mb-3">
-        <div className="text-black text-left w-full sm:w-full md:w-1/2 lg:w-1/2">
-          <div className="bg-black p-2 inline-block">
-            <h2 className="text-4xl sm:4xl md:text-5xl lg:text-5xl xl:text-6xl font-extrabold text-white">
-              BOOST...!
-            </h2>
-          </div>
-          <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-extrabold pt-4 lg:pt-8 pr-4 lg:pr-8">
-            We Help You Grow
-          </h1>
-          <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-extrabold pt-2 lg:pt-4 pr-4 lg:pr-8">
-            Your Business
-          </h1>
-          <p className=" text-lg sm:text-lg md:text-xl lg:text-xl xl:text-2xl  pt-4">
-            Place your trust in us, and we'll provide significant growth for
-            your business. Like other great agencies, we are committed to
-            delivering only the best results.
-          </p>
+    <div className="bg-gray-100 ">
+      <div className="flex flex-col pt-40 justify-center items-center text-black">
+        <div className="bg-black p-2 inline-block">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-white">
+            BOOST...!
+          </h2>
         </div>
-        <div className="flex justify-center">
+        <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold pt-5">
+          Your Business Find
+        </h1>
+        <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold pb-5">
+          Better Solution.
+        </h1>
+        <button className="bg-red-400 text-white rounded-xl px-6 py-3 text-sm ">
+          Learn More
+        </button>
+        <div className="pt-2">
           <Image
-            src="/dm.png"
-            alt="Hero Image"
-            width={400}
-            height={400}
-            className="w-auto h-auto"
-            priority
-          />
+            src="/bghero.png"
+            alt="heroimg"
+            width={1000}
+            height={1000}
+            className="h-[300px] w-[400px]"
+          ></Image>
         </div>
       </div>
     </div>

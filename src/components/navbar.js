@@ -50,11 +50,12 @@ const Navbar = () => {
           <Image
             src="/logo.png"
             alt="logo"
-            width={scrolled ? 100 : 120}
-            height={scrolled ? 100 : 120}
+            priority
+            width={scrolled ? 400 : 400}
+            height={scrolled ? 400 : 400}
             className={`transition-all duration-500 
             ${
-              scrolled ? "w-8 h-8 lg:w-16 lg:h-14" : "w-10 h-10 lg:w-20 lg:h-16"
+              scrolled ? "w-8 h-8 lg:w-14 lg:h-10" : "w-10 h-10 lg:w-16 lg:h-12"
             } `}
           />
         </Link>
