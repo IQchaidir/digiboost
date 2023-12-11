@@ -11,10 +11,10 @@ export default function About() {
         <div className=" pt-20 flex flex-col lg:flex-row mx-2 sm:mx-6 xl:mx-28 lg:mx-16 md:mx-10 gap-10">
           <div>
             <Image
-              src="/dm2.png"
+              src="/dm2.jpg"
               alt="about img"
-              width={500}
-              height={500}
+              width={1000}
+              height={1000}
               className="h-auto w-full"
             />
           </div>
