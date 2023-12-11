@@ -35,9 +35,9 @@ const Footer = () => {
           <div className="mx-2 md:mx-28 flex flex-col md:flex-row justify-between">
             <div className="flex flex-col md:flex-row">
               <div className="mt-4 md:mt-0 md:ml-4">
-                <p className="text-xl font-semibold">Company Name</p>
+                <p className="text-xl font-semibold">DigiBoost</p>
                 <p>123 Main Street, City</p>
-                <p>Email: info@company.com</p>
+                <p>Email: info@digiboost.com</p>
                 <p>Phone: (123) 456-7890</p>
               </div>
               <div className="ml-0 md:ml-28 mt-4 md:mt-0">
