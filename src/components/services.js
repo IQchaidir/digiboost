@@ -66,7 +66,7 @@ const Services = () => {
 
   return (
     <>
-      <div className="text-center bg-white pt-24 md:pt-36 lg:pt-48">
+      <div className="text-center bg-white pt-36 md:pt-36 lg:pt-48">
         <p className="text-lg md:text-2xl inline-block border-b-4 border-red-400 ">
           OUR SERVICES
         </p>
