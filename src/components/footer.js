@@ -34,13 +34,13 @@ const Footer = () => {
         <footer className="text-black p-6 bg-gray-100">
           <div className="mx-2 md:mx-28 flex flex-col md:flex-row justify-between">
             <div className="flex flex-col md:flex-row">
-              <div className="mt-4 md:mt-0 md:ml-4">
+              <div className="mt-4 md:mt-0 ">
                 <p className="text-xl font-semibold">DigiBoost</p>
                 <p>123 Main Street, City</p>
                 <p>Email: info@digiboost.com</p>
                 <p>Phone: (123) 456-7890</p>
               </div>
-              <div className="flex flex-col ml-0 md:ml-28 mt-4 md:mt-0">
+              <div className="flex flex-col ml-0 lg:ml-28 mt-4 md:mt-0">
                 <h2 className="text-xl font-bold pb-2">Company Site</h2>
                 <Link href="/teams">
                   <p className="hover:scale-105">Team</p>
@@ -58,7 +58,7 @@ const Footer = () => {
                 <h2 className="text-xl font-bold pb-2">Stay Connected</h2>
                 <form
                   onSubmit={handleSubscribe}
-                  className="border p-1 rounded-md"
+                  className="md:border p-1 rounded-md"
                 >
                   <input
                     type="email"
