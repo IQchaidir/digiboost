@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import Link from "next/link";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -43,9 +44,15 @@ const Footer = () => {
               <div className="ml-0 md:ml-28 mt-4 md:mt-0">
                 <h2 className="text-xl font-bold pb-2">Company</h2>
                 <ul>
-                  <li>Team</li>
-                  <li>About Us</li>
-                  <li>Products</li>
+                  <Link href="/teams">
+                    <li>Team</li>
+                  </Link>
+                  <Link href="/about">
+                    <li>About Us</li>
+                  </Link>
+                  <Link href="/services">
+                    <li>Services</li>
+                  </Link>
                 </ul>
               </div>
             </div>
@@ -87,9 +94,15 @@ const Footer = () => {
                 )}
               </div>
               <div className="mt-4  flex items-center gap-1 pt-2">
-                <FaLinkedin className="w-8 h-8" />
-                <FaInstagramSquare className="w-8 h-8" />
-                <FaSquareXTwitter className="w-8 h-8" />
+                <Link href="https://id.linkedin.com/">
+                  <FaLinkedin className="w-8 h-8" />
+                </Link>
+                <Link href="https://www.instagram.com/">
+                  <FaInstagramSquare className="w-8 h-8" />
+                </Link>
+                <Link href="https://twitter.com/?lang=id">
+                  <FaSquareXTwitter className="w-8 h-8" />
+                </Link>
               </div>
             </div>
           </div>

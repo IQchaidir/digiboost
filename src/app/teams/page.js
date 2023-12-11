@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaLinkedin, FaInstagramSquare, FaTwitterSquare } from "react-icons/fa";
 
@@ -119,9 +120,17 @@ const Teams = () => {
                 <p className="text-sm mb-2 text-center">{member.email}</p>
                 <p className="text-sm mb-4 text-center">{member.position}</p>
                 <div className="flex gap-4">
-                  <FaLinkedin size={24} />
-                  <FaInstagramSquare size={24} />
-                  <FaTwitterSquare size={24} />
+                  <Link href="https://id.linkedin.com/">
+                    <FaLinkedin size={24} />{" "}
+                  </Link>
+                  <Link href="https://www.instagram.com/">
+                    {" "}
+                    <FaInstagramSquare size={24} />{" "}
+                  </Link>
+                  <Link href="https://twitter.com/?lang=id">
+                    {" "}
+                    <FaTwitterSquare size={24} />{" "}
+                  </Link>
                 </div>
               </div>
             ))}
@@ -150,9 +159,17 @@ const Teams = () => {
               <p className="text-sm mb-2 text-center">{member.email}</p>
               <p className="text-sm mb-4 text-center">{member.profession}</p>
               <div className="flex gap-4">
-                <FaLinkedin size={24} />
-                <FaInstagramSquare size={24} />
-                <FaTwitterSquare size={24} />
+                <Link href="https://id.linkedin.com/">
+                  <FaLinkedin size={24} />{" "}
+                </Link>
+                <Link href="https://www.instagram.com/">
+                  {" "}
+                  <FaInstagramSquare size={24} />{" "}
+                </Link>
+                <Link href="https://twitter.com/?lang=id">
+                  {" "}
+                  <FaTwitterSquare size={24} />{" "}
+                </Link>
               </div>
             </div>
           ))}

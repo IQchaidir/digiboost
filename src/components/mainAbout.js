@@ -18,13 +18,13 @@ const MainAbout = () => {
           <div className="text-left w-full lg:w-1/2">
             <p className="text-lg text-white font-semibold">ABOUT US</p>
             <h1 className="text-3xl text-white xl:text-5xl lg:text-3xl md:text-3xl font-bold pt-4">
-              Who Is DigiMedia Agency
+              Who Is Digiboost Agency
             </h1>
             <p className="text-xl xl:text-2xl lg:text-xl pt-6 text-white">
-              Welcome to [Company Name], the creative solution for your
-              marketing and business development needs. As an innovative Digital
-              Media Agency, we have a mission to deliver extraordinary marketing
-              experiences and exceptional results for our clients.
+              Welcome to DigiBoost, your ultimate destination for innovative
+              solutions to meet all your marketing and business development
+              needs. At DigiBoost, we don't just provide services; we craft
+              experiences that leave a lasting impact.
             </p>
           </div>
         </div>
