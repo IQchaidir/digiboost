@@ -61,7 +61,6 @@ const TeamsFetching = () => {
 
   return (
     <div className="pt-32 px-4 md:px-20 lg:px-44 py-12">
-      <h1 className="text-4xl font-bold mb-8 text-center">Other Team</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6 mb-8 justify-center">
         {teamMembers.map((member, index) => (
           <div
