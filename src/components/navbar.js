@@ -73,11 +73,13 @@ const Navbar = () => {
               Services
             </button>
           </Link>
-          <button
-            className={`nav-button hover:bg-black hover:text-white rounded-xl p-2`}
-          >
-            Teams
-          </button>
+          <Link href="/teams">
+            <button
+              className={`nav-button hover:bg-black hover:text-white rounded-xl p-2`}
+            >
+              Teams
+            </button>
+          </Link>
         </div>
         {/* Button untuk toggle menu di smartphone */}
 
