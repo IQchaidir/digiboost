@@ -4,7 +4,7 @@ import Image from "next/image";
 const MainHero = () => {
   return (
     <div className="mx-2 sm:mx-6  md:mx-10  lg:mx-16 xl:mx-0 ">
-      <div className="flex flex-col md:flex-row pt-40 justify-center mb-3">
+      <div className="flex flex-col md:flex-row pt-36 md:pt-40 justify-center mb-3">
         <div className="text-black text-left w-full sm:w-full md:w-1/2 lg:w-1/2">
           <div className="bg-black p-2 inline-block">
             <h2 className="text-4xl sm:4xl md:text-5xl lg:text-5xl xl:text-6xl font-extrabold text-white">
