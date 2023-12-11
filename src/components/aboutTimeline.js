@@ -45,8 +45,8 @@ const events = [
 
 const AboutTimeline = () => {
   return (
-    <div className="px-4 md:px-8 lg:px-36 pt-10 md:pt-20 flex flex-col justify-center text-center">
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mt-8 mb-4">
+    <div className="px-4 md:px-8 lg:px-36 pt-24 pb-10 flex flex-col justify-center text-center">
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold  mb-4">
         Timeline History
       </h1>
       <div className="flex flex-col items-center justify-center mt-6 md:mt-10 space-y-6 md:space-y-8 relative">
