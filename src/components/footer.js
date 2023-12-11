@@ -40,19 +40,17 @@ const Footer = () => {
                 <p>Email: info@digiboost.com</p>
                 <p>Phone: (123) 456-7890</p>
               </div>
-              <div className="ml-0 md:ml-28 mt-4 md:mt-0">
+              <div className="flex flex-col ml-0 md:ml-28 mt-4 md:mt-0">
                 <h2 className="text-xl font-bold pb-2">Company Site</h2>
-                <ul className="text-left ">
-                  <Link href="/teams">
-                    <li className="hover:scale-105">Team</li>
-                  </Link>
-                  <Link href="/about">
-                    <li className="hover:scale-105">About Us</li>
-                  </Link>
-                  <Link href="/services">
-                    <li className="hover:scale-105">Services</li>
-                  </Link>
-                </ul>
+                <Link href="/teams">
+                  <p className="hover:scale-105">Team</p>
+                </Link>
+                <Link href="/about">
+                  <p className="hover:scale-105">About Us</p>
+                </Link>
+                <Link href="/services">
+                  <p className="hover:scale-105">Services</p>
+                </Link>
               </div>
             </div>
             <div className="flex flex-col">

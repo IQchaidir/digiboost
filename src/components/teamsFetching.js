@@ -81,14 +81,14 @@ const TeamsFetching = () => {
             <p className="text-sm mb-2 text-center">{member.email}</p>
             <p className="text-sm mb-2 text-center">{member.profession}</p>
             <div className="flex gap-4">
-              <Link href="https://id.linkedin.com/">
+              <Link href="https://id.linkedin.com/" aria-label="LinkedIn">
                 <FaLinkedin size={24} className="hover:scale-105" />{" "}
               </Link>
-              <Link href="https://www.instagram.com/">
+              <Link href="https://www.instagram.com/" aria-label="Instagram">
                 {" "}
                 <FaInstagramSquare size={24} className="hover:scale-105" />{" "}
               </Link>
-              <Link href="https://twitter.com/?lang=id">
+              <Link href="https://twitter.com/?lang=id" aria-label="Twitter">
                 {" "}
                 <FaTwitterSquare size={24} className="hover:scale-105" />{" "}
               </Link>

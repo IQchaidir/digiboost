@@ -16,7 +16,7 @@ const MainHero = () => {
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold pb-5">
           Better Solution.
         </h1>
-        <button className="bg-red-400 text-white rounded-xl px-6 py-3 text-sm ">
+        <button className="bg-black text-white rounded-xl px-6 py-3 text-sm ">
           Learn More
         </button>
         <div className="pt-2">
