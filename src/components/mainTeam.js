@@ -52,7 +52,7 @@ const MainTeam = () => {
     <div className="flex flex-col items-center pt-16 sm:pt-24 md:pt-32 lg:pt-36 pb-12 bg-black">
       <div className="text-center text-white">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold">
-          Leadership Team
+          Leader Team
         </h2>
         <p className="text-sm sm:text-base pt-4 sm:pt-8 mb-8 sm:mb-14">
           Benefit from our expertise in designing and managing

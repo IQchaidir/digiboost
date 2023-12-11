@@ -94,7 +94,7 @@ const Teams = () => {
       <div className="flex flex-col items-center mx-2 pt-32 sm:pt-32 md:pt-32 lg:pt-32 pb-12 ">
         <div className="text-center text-black">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold">
-            Leadership Team
+            Leader Team
           </h2>
           <p className="text-sm sm:text-base pt-4 sm:pt-8 mb-8 sm:mb-14">
             Benefit from our expertise in designing and managing

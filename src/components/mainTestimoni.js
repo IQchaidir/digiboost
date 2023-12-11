@@ -7,21 +7,21 @@ const MainTestimoni = () => {
     {
       id: 1,
       content:
-        "Real estate demands a strong online presence, and [Company Name] delivered exactly that. Their digital marketing efforts attracted more leads, and their strategic approach helped me close deals efficiently. Great team!",
+        "Real estate demands a strong online presence, and DigiBoost delivered exactly that. Their digital marketing efforts attracted more leads, and their strategic approach helped me close deals efficiently. Great team!",
       author: "John Doe",
       profession: " Real Estate Agent",
     },
     {
       id: 2,
       content:
-        "Working with [Company Name] was a game-changer for my small business. Their digital marketing strategies brought in more customers, and their creative approach made our brand stand out. Truly impressed!",
+        "Working with DigiBoost was a game-changer for my small business. Their digital marketing strategies brought in more customers, and their creative approach made our brand stand out. Truly impressed!",
       author: "Sarah Williams",
       profession: "Small Business Owner",
     },
     {
       id: 3,
       content:
-        "In the competitive world of e-commerce, [Company Name] stood out. Their tailored digital solutions boosted our online presence, increased sales, and gave us a clear edge. Highly recommended!",
+        "In the competitive world of e-commerce, DigiBoost stood out. Their tailored digital solutions boosted our online presence, increased sales, and gave us a clear edge. Highly recommended!",
       author: "Alex Rodriguez",
       profession: "E-commerce Entrepreneur",
     },

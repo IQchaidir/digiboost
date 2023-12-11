@@ -13,15 +13,11 @@ export default function About() {
             <h1 className="text-3xl text-black xl:text-5xl lg:text-3xl md:text-3xl font-bold pt-4">
               Who Is Digiboost Agency
             </h1>
-            <p className="text-xl xl:text-2xl lg:text-xl pt-6 text-black">
+            <p className="text-base xl:text-2xl lg:text-xl pt-6 text-black">
               Welcome to DigiBoost, your ultimate destination for innovative
               solutions to meet all your marketing and business development
               needs. At DigiBoost, we don't just provide services; we craft
-              experiences that leave a lasting impact. As a forward-thinking
-              Digital Media Agency, we are on a mission to redefine the
-              standards of excellence in the digital realm, delivering not just
-              ordinary but extraordinary marketing experiences coupled with
-              exceptional results for our esteemed clients.
+              experiences that leave a lasting impact.
             </p>
           </div>
         </div>
