@@ -21,7 +21,7 @@ const MainTestimoni = () => {
     {
       id: 3,
       content:
-        "In the competitive world of e-commerce, DigiBoost stood out. Their tailored digital solutions boosted our online presence, increased sales, and gave us a clear edge. Highly recommended!",
+        "In the competitive world of e-commerce, DigiBoost stood out. Their tailored digital solutions boosted our online presence, increased sales, and gave us a clear edge. Highly recommended and Truly impressed!",
       author: "Alex Rodriguez",
       profession: "E-commerce Entrepreneur",
     },
