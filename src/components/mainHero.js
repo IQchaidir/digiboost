@@ -16,10 +16,10 @@ const MainHero = () => {
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold pb-5">
           Better Solution.
         </h1>
-        <button className="bg-black text-white rounded-xl px-6 py-3 text-sm ">
+        <button className="bg-black text-white rounded-xl px-6 py-3 text-base font-medium ">
           Learn More
         </button>
-        <div className="pt-2">
+        <div className="pt-10">
           <Image
             src="/bghero.png"
             alt="heroimg"
