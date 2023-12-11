@@ -3,22 +3,13 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="pt-40">
-      <div className="mb-10">
-        <div className="flex flex-col items-center text-5xl md:text-7xl pt-5 md:pt-10 pb-10 mx-2 sm:mx-6 xl:mx-28 lg:mx-16">
+    <div className="pt-28">
+      <div className="mb-16">
+        <div className="flex flex-col items-center text-4xl md:text-5xl pt-5 md:pt-10 pb-10 mx-2 sm:mx-6 xl:mx-28 lg:mx-16">
           <h1>-ABOUT-</h1>
         </div>
-        <div className=" pt-20 flex flex-col lg:flex-row mx-2 sm:mx-6 xl:mx-28 lg:mx-16 md:mx-10 gap-10">
-          <div>
-            <Image
-              src="/dm2.jpg"
-              alt="about img"
-              width={1000}
-              height={1000}
-              className="h-auto w-full"
-            />
-          </div>
-          <div className="text-left w-full lg:w-1/2">
+        <div className=" pt-1 flex flex-col lg:flex-row mx-2 sm:mx-6 xl:mx-28 lg:mx-16 md:mx-10 gap-10">
+          <div className="text-center w-full ">
             <h1 className="text-3xl text-black xl:text-5xl lg:text-3xl md:text-3xl font-bold pt-4">
               Who Is Digiboost Agency
             </h1>
