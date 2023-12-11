@@ -91,7 +91,7 @@ const Teams = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center mx-2 pt-32 sm:pt-32 md:pt-32 lg:pt-32 pb-12 ">
+      <div className="flex flex-col items-center mx-5 pt-32 sm:pt-32 md:pt-32 lg:pt-32 pb-12 ">
         <div className="text-center text-black">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold">
             Leader Team
