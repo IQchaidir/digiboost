@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import { FaCheckCircle } from "react-icons/fa";
 
 const AboutCulture = () => {
   return (

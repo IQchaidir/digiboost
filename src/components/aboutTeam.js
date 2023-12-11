@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const TeamMember = ({ name, position, image, experience, socialMedia }) => (
+const TeamMember = ({ name, position, image, experience }) => (
   <div className=" bg-white border p-4 mb-8 rounded-md shadow-md flex flex-col items-center ">
     <Image
       src={image}
