@@ -1,6 +1,6 @@
 const ServicesPrice = () => {
   return (
-    <div className="pt-28 flex flex-col justify-center text-center mx-4 sm:mx-6 md:mx-8 lg:mx-16 xl:mx-20">
+    <div className="pt-28 flex flex-col justify-center text-center mx-4 sm:mx-6 md:mx-8 lg:mx-16 xl:mx-36">
       <div className="bg-red-400 p-4 text-white rounded-full inline-block">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium">
           Price Table
