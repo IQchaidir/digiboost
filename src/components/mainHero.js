@@ -19,7 +19,7 @@ const MainHero = () => {
         </h1>
         <Link href="/services">
           <button className="bg-black text-white rounded-xl px-6 py-3 text-base font-medium ">
-            Learn More
+            Our Services
           </button>
         </Link>
         <div className="pt-2">
