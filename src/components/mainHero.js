@@ -21,11 +21,11 @@ const MainHero = () => {
         </button>
         <div className="pt-10">
           <Image
-            src="/bghero.png"
+            src="/bghero.webp"
             alt="heroimg"
             width={400}
             height={300}
-            className="h-auto w-auto"
+            className="h-[300px] w-[400px]"
           ></Image>
         </div>
       </div>
