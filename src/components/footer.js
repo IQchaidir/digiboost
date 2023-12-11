@@ -41,8 +41,8 @@ const Footer = () => {
                 <p>Phone: (123) 456-7890</p>
               </div>
               <div className="ml-0 md:ml-28 mt-4 md:mt-0">
-                <h2 className="text-xl font-bold pb-2">Company</h2>
-                <ul>
+                <h2 className="text-xl font-bold pb-2">Company Site</h2>
+                <ul className="text-left ">
                   <Link href="/teams">
                     <li className="hover:scale-105">Team</li>
                   </Link>
@@ -92,14 +92,14 @@ const Footer = () => {
                   </div>
                 )}
               </div>
-              <div className="mt-4  flex items-center gap-1 pt-2">
-                <Link href="https://id.linkedin.com/">
+              <div className="mt-4 flex items-center gap-1 pt-2">
+                <Link href="https://id.linkedin.com/" aria-label="LinkedIn">
                   <FaLinkedin className="w-8 h-8 hover:scale-105" />
                 </Link>
-                <Link href="https://www.instagram.com/">
+                <Link href="https://www.instagram.com/" aria-label="Instagram">
                   <FaInstagramSquare className="w-8 h-8 hover:scale-105" />
                 </Link>
-                <Link href="https://twitter.com/?lang=id">
+                <Link href="https://twitter.com/?lang=id" aria-label="Twitter">
                   <FaSquareXTwitter className="w-8 h-8 hover:scale-105" />
                 </Link>
               </div>

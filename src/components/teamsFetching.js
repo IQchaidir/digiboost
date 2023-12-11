@@ -75,9 +75,9 @@ const TeamsFetching = () => {
               height={120}
               className="w-32 h-32 rounded-full mx-auto mb-4"
             />
-            <h3 className="text-lg font-semibold mb-2 text-center ">
+            <p className="text-lg font-semibold mb-2 text-center ">
               {`${member.name.first} ${member.name.last}`}
-            </h3>
+            </p>
             <p className="text-sm mb-2 text-center">{member.email}</p>
             <p className="text-sm mb-2 text-center">{member.profession}</p>
             <div className="flex gap-4">
