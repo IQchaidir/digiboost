@@ -1,25 +1,28 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
+import Link from "next/link";
 
 const MainHero = () => {
   return (
     <div className="bg-gray-100 ">
-      <div className="flex flex-col pt-48 justify-center items-center text-black">
+      <div className="flex flex-col pt-40 justify-center items-center text-black">
         <div className="bg-black p-2 inline-block">
           <h2 className="text-2xl md:text-3xl font-extrabold text-white">
             BOOST...!
           </h2>
         </div>
-        <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold pt-5">
+        <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold pt-4">
           Your Business Find
         </h1>
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold pb-5">
           Better Solution.
         </h1>
-        <button className="bg-black text-white rounded-xl px-6 py-3 text-base font-medium ">
-          Learn More
-        </button>
-        <div className="pt-12">
+        <Link href="/services">
+          <button className="bg-black text-white rounded-xl px-6 py-3 text-base font-medium ">
+            Learn More
+          </button>
+        </Link>
+        <div className="pt-2">
           <Image
             src="/bghero.webp"
             alt="heroimg"

@@ -66,11 +66,11 @@ const Services = () => {
 
   return (
     <>
-      <div className="text-center bg-white pt-36 md:pt-36 lg:pt-48">
-        <p className="text-lg md:text-2xl inline-block border-b-4 border-red-400 ">
+      <div className="text-center bg-white pt-40">
+        <p className="text-lg md:text-3xl inline-block border-b-4 border-red-400 ">
           OUR SERVICES
         </p>
-        <h1 className="text-2xl md:text-5xl font-bold pt-5">
+        <h1 className="text-2xl md:text-5xl font-bold pt-10">
           What Our Agency Provides
         </h1>
       </div>
