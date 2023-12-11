@@ -4,7 +4,7 @@ import Image from "next/image";
 const MainHero = () => {
   return (
     <div className="bg-gray-100 ">
-      <div className="flex flex-col pt-40 justify-center items-center text-black">
+      <div className="flex flex-col pt-48 justify-center items-center text-black">
         <div className="bg-black p-2 inline-block">
           <h2 className="text-2xl md:text-3xl font-extrabold text-white">
             BOOST...!
@@ -23,9 +23,9 @@ const MainHero = () => {
           <Image
             src="/bghero.png"
             alt="heroimg"
-            width={1000}
-            height={1000}
-            className="h-[300px] w-[400px]"
+            width={400}
+            height={300}
+            className="h-auto w-auto"
           ></Image>
         </div>
       </div>
